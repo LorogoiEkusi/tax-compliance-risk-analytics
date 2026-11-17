@@ -1,0 +1,17 @@
+Ticket ID,Title,Sprint,Initial Status,Acceptance evidence,Owner
+S1-01,Initialize repository and folders,Sprint 1,Backlog,"README, folder tree, .gitignore",Student researcher
+S1-02,Create reproducible Python environment,Sprint 1,Backlog,requirements.txt and environment verification,Student researcher
+S1-03,Download and verify UCI Online Retail II,Sprint 1,Backlog,"Source citation, retrieval date, checksum, licence check",Student researcher
+S1-04,Profile source schema and data quality,Sprint 1,Backlog,Profiling notebook and preliminary data dictionary,Student researcher
+S2-01,Implement raw-to-clean transformation,Sprint 2,Backlog,Cleaning module and transformation log,Student researcher
+S2-02,Classify cancellations and returns,Sprint 2,Backlog,Documented classification logic and tests,Student researcher
+S2-03,Engineer transaction features,Sprint 2,Backlog,Feature table and definitions,Student researcher
+S2-04,Complete exploratory and diagnostic analysis,Sprint 2,Backlog,EDA notebook and KPI baseline,Student researcher
+S3-01,Build transparent rule/statistical baseline,Sprint 3,Backlog,Baseline anomaly flags and rationale,Student researcher
+S3-02,Train unsupervised anomaly model,Sprint 3,Backlog,"Model artefact, parameters and experiment record",Student researcher
+S3-03,Add explanation outputs,Sprint 3,Backlog,Feature contribution/explanation table,Student researcher
+S3-04,Assess fairness and stability,Sprint 3,Backlog,Group flag-rate and stability analysis with limitations,Student researcher
+S4-01,Build Power BI decision-support dashboard,Sprint 4,Backlog,"Dashboard pages, filters and caveats",Student researcher
+S4-02,Reconcile dashboard metrics to analytical tables,Sprint 4,Backlog,Reconciliation tests and sign-off checklist,Student researcher
+S4-03,Complete model card and governance documentation,Sprint 4,Backlog,"Model card, privacy checklist, limitations",Student researcher
+S4-04,Package final report and demonstration,Sprint 4,Backlog,"Final report, screenshots and reproducible run instructions",Student researcher

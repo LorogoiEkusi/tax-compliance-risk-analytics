@@ -1,0 +1,12 @@
+ID,Type,Description,Likelihood,Impact,Mitigation / response,Owner,Status
+R01,Risk,UK retail proxy dataset may not generalise to Kenyan tax administration.,High,High,State proxy limitation; do not claim Kenyan compliance prediction; recommend future authorised local validation.,Student researcher,Open
+R02,Risk,"Legitimate bulk orders, seasonality or returns may be flagged as anomalies.",High,High,Compare rule/statistical baselines; explain drivers; require human review; sample false positives.,Student researcher,Open
+R03,Risk,Customer identifiers may enable re-identification.,Medium,High,Pseudonymise; restrict raw data; publish aggregates only; exclude raw data from Git.,Student researcher,Open
+R04,Risk,"Proxy variables (country, customer activity, transaction value) may create uneven flag rates.",Medium,High,Compare observable groups; document proxy risk; avoid protected/sensitive predictors.,Student researcher,Open
+A01,Assumption,Public UCI dataset remains accessible under the stated CC BY 4.0 licence.,Medium,Medium,"Verify source page, version, attribution and download date before use.",Student researcher,To verify
+A02,Assumption,Local development environment can process a representative dataset sample.,Medium,Medium,Benchmark ingestion and processing; document hardware/software versions.,Student researcher,To verify
+I01,Issue,No verified labels of tax non-compliance or fraud exist in the selected dataset.,High,High,"Use unsupervised validation, case review and stability analysis; do not report supervised accuracy.",Student researcher,Accepted constraint
+I02,Issue,CustomerID is missing for some transaction lines and cancellations need contextual treatment.,Medium,Medium,Profile missingness; preserve missing values; separately classify cancellation/return patterns.,Student researcher,To investigate
+D01,Dependency,Dataset download and source/licence verification are prerequisites for pipeline development.,High,Medium,"Record retrieval date, source filename, checksum and dataset version.",Student researcher,Open
+D02,Dependency,Python environment and GitHub repository must be ready before sprint coding.,Medium,Medium,"Commit requirements file, README, folder structure and .gitignore first.",Student researcher,Open
+D03,Dependency,Power BI dashboard depends on validated feature and model output tables.,Medium,Medium,Define output schema during Sprint 2 and freeze dashboard fields before Sprint 4.,Student researcher,Open

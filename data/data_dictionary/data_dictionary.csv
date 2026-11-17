@@ -1,0 +1,9 @@
+Domain,Field,Type,Meaning,Preparation / governance notes
+Invoice,InvoiceNo,Text / categorical,Invoice identifier; values beginning with 'C' indicate cancellations in common dataset descriptions.,Required for transaction grouping; preserve original value.
+Product,StockCode,Text / categorical,Product or stock keeping code.,Treat as category; profile unusual or missing codes.
+Product,Description,Text,Product description.,Standardise whitespace/case cautiously; do not infer tax category.
+Transaction,Quantity,Integer,Number of units on invoice line; negative quantities may occur for returns/cancellations.,Validate type; retain negative values and classify rather than silently delete.
+Transaction,InvoiceDate,Datetime,Date and time of invoice line.,Parse timezone-naive source timestamps; derive day/month/hour fields.
+Pricing,Price,Numeric,Unit price in source currency (GBP context).,Validate non-negative/zero values; retain exceptions for investigation.
+Customer,CustomerID,Nullable identifier,Customer identifier; may be missing.,Pseudonymise for analysis; never publish row-level identifiers.
+Geography,Country,Categorical,Customer country field.,Use only for descriptive grouping and cautious disparity checks; not a protected attribute.

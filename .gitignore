@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.ipynb_checkpoints/
+# Raw/processed data are local-only; keep dictionary and project-control CSVs
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+# Model outputs and local databases
+*.pkl
+*.joblib
+*.db
+# OS/editor
+.DS_Store
+.vscode/
