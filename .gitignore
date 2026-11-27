@@ -16,3 +16,17 @@ __pycache__/
 # OS/editor
 .DS_Store
 .vscode/
+
+# Additional security protections
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Testing and execution artefacts
+.pytest_cache/
+*.log
+*.sqlite
+*.sqlite3
